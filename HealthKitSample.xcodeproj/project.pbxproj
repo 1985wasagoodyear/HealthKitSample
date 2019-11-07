@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F16404C2373AF6D00877C49 /* PedometerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16404B2373AF6D00877C49 /* PedometerManager.swift */; };
+		3F16404F2373AFCB00877C49 /* Date+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16404E2373AFCB00877C49 /* Date+Utility.swift */; };
 		3F236281236FD25200E43DAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F236280236FD25200E43DAC /* AppDelegate.swift */; };
 		3F236283236FD25200E43DAC /* StepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F236282236FD25200E43DAC /* StepsViewController.swift */; };
 		3F236286236FD25200E43DAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F236284236FD25200E43DAC /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F16404B2373AF6D00877C49 /* PedometerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerManager.swift; sourceTree = "<group>"; };
+		3F16404E2373AFCB00877C49 /* Date+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utility.swift"; sourceTree = "<group>"; };
 		3F23627D236FD25200E43DAC /* HealthKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F236280236FD25200E43DAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F236282236FD25200E43DAC /* StepsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +52,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F16404D2373AFC100877C49 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3FDDCF1323724FD7005C5AA6 /* ThreadsafeDispatchWorkItem.swift */,
+				3F16404E2373AFCB00877C49 /* Date+Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		3F236274236FD25200E43DAC = {
 			isa = PBXGroup;
 			children = (
@@ -70,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				3FB9B7E423724162005C3B48 /* HealthKitSample.entitlements */,
-				3FDDCF1323724FD7005C5AA6 /* ThreadsafeDispatchWorkItem.swift */,
+				3F16404D2373AFC100877C49 /* Utility */,
 				3F8D1031237248DC007DB680 /* CoreMotion */,
 				3FB9B7E8237241CD005C3B48 /* HealthKitManager */,
 				3F236282236FD25200E43DAC /* StepsViewController.swift */,
@@ -87,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				3F8D1032237248E6007DB680 /* MotionManager.swift */,
+				3F16404B2373AF6D00877C49 /* PedometerManager.swift */,
 			);
 			path = CoreMotion;
 			sourceTree = "<group>";
@@ -180,6 +194,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F236283236FD25200E43DAC /* StepsViewController.swift in Sources */,
+				3F16404C2373AF6D00877C49 /* PedometerManager.swift in Sources */,
+				3F16404F2373AFCB00877C49 /* Date+Utility.swift in Sources */,
 				3F8D1033237248E6007DB680 /* MotionManager.swift in Sources */,
 				3FDDCF1423724FD7005C5AA6 /* ThreadsafeDispatchWorkItem.swift in Sources */,
 				3FB9B7EC23724248005C3B48 /* HealthKitManagerError.swift in Sources */,

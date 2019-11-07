@@ -3,16 +3,20 @@
 A start of a pedometer application.
 
 This application:
-1. Detects user motion using `CoreMotion`
-2. On motion, queries `HealthKit` for the amount of steps taken today
-3. Updates that value on the UI.
+~~1. Detects user motion using `CoreMotion`~~
+~~2. On motion, queries `HealthKit` for the amount of steps taken today~~
+1. Tracks motion using the built-in pedometer in `CMPedometer`, within `CoreMotion`.
+2. ???
+3. Updates that steps value on the UI.
 
 
 # TODO
 
-* May want to explore using `CMPedometer`?
+* ~~May want to explore using `CMPedometer`?~~
 
 #  Resources
+
+[Using CMPedometer](https://www.devfright.com/how-to-use-the-cmpedometer-for-counting-steps/)
 
 [Setting up HealthKit](https://developer.apple.com/documentation/healthkit/setting_up_healthkit)
 

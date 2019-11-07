@@ -16,6 +16,34 @@ class StepsViewController: UIViewController {
     
     // MARK: - Manager Properties
     
+    lazy var m: PedometerManager = {
+        return PedometerManager.init({ [weak self] steps in
+            guard let self = self else { return }
+            DispatchQueue.main.async {
+                self.stepsLabel.text = "\(steps)"
+            }
+        })
+    }()
+    
+    // MARK: - Lifecycle Methods
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        m.start()
+    }
+}
+
+
+
+
+
+
+
+
+
+// old, unused
+extension StepsViewController {
+    /*
     let healthKitManager = HealthKitManager.shared
     
     lazy var motionManager: MotionManager = {
@@ -25,16 +53,9 @@ class StepsViewController: UIViewController {
             self.getSteps()
         }
     }()
-    
+     
     var currQuery = ThreadsafeDispatchWorkItem()
-
-    // MARK: - Lifecycle Methods
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        try! healthKitManager.start()
-        motionManager.start()
-    }
+    */
     
     // MARK: - Update UI Methods
     

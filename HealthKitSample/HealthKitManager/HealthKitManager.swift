@@ -53,13 +53,13 @@ final class HealthKitManager {
     }
     
     /// Get the number of steps for today
+    /// Remark: this gathers all steps for today, rather than individual step changes.
     func retrieveStepCount(completion: @escaping ((_ stepRetrieved: Double) -> Void)) {
         //   Define the Step Quantity Type
         let stepsCount = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!
         
         //   Get the start of the day
-        let cal = Calendar(identifier: Calendar.Identifier.gregorian)
-        let newDate = cal.startOfDay(for: Date())
+        let newDate = Date.startOfCurrentDate()
         
         //  Set the Predicates & Interval
         let predicate = HKQuery.predicateForSamples(withStart: newDate,

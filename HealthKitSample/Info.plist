@@ -40,6 +40,8 @@
 	<string>I would like access to your health records.</string>
 	<key>NSHealthShareUsageDescription</key>
 	<string>I would like share your health records.</string>
+	<key>NSMotionUsageDescription</key>
+	<string>I would like to track your movement.</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
